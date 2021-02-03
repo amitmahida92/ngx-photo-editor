@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NgxPhotoEditorModule} from '../../projects/ngx-photo-editor/src/lib/ngx-photo-editor.module';
-import {MatButtonModule, MatButtonToggleModule, MatIconModule, MatInputModule, MatToolbarModule} from '@angular/material';
+import { NgxPhotoEditorModule } from '../../projects/ng-photo-editor/src/lib/ng-photo-editor.module';
+import { MatButtonModule, MatButtonToggleModule, MatIconModule, MatInputModule, MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [

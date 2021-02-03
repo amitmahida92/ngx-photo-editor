@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-photo-editor-app": {
+    "ng-photo-editor-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-photo-editor-app",
+            "outputPath": "dist/ng-photo-editor-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,18 +64,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-photo-editor-app:build"
+            "browserTarget": "ng-photo-editor-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-photo-editor-app:build:production"
+              "browserTarget": "ng-photo-editor-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-photo-editor-app:build"
+            "browserTarget": "ng-photo-editor-app:build"
           }
         },
         "test": {
@@ -113,11 +113,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-photo-editor-app:serve"
+            "devServerTarget": "ng-photo-editor-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-photo-editor-app:serve:production"
+              "devServerTarget": "ng-photo-editor-app:serve:production"
             }
           }
         },
@@ -127,33 +127,33 @@
         }
       }
     },
-    "ngx-photo-editor": {
+    "ng-photo-editor": {
       "projectType": "library",
-      "root": "projects/ngx-photo-editor",
-      "sourceRoot": "projects/ngx-photo-editor/src",
+      "root": "projects/ng-photo-editor",
+      "sourceRoot": "projects/ng-photo-editor/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngx-photo-editor/tsconfig.lib.json",
-            "project": "projects/ngx-photo-editor/ng-package.json"
+            "tsConfig": "projects/ng-photo-editor/tsconfig.lib.json",
+            "project": "projects/ng-photo-editor/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-photo-editor/src/test.ts",
-            "tsConfig": "projects/ngx-photo-editor/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-photo-editor/karma.conf.js"
+            "main": "projects/ng-photo-editor/src/test.ts",
+            "tsConfig": "projects/ng-photo-editor/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-photo-editor/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-photo-editor/tsconfig.lib.json",
-              "projects/ngx-photo-editor/tsconfig.spec.json"
+              "projects/ng-photo-editor/tsconfig.lib.json",
+              "projects/ng-photo-editor/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -163,5 +163,5 @@
       }
     }
   },
-  "defaultProject": "ngx-photo-editor-app"
+  "defaultProject": "ng-photo-editor-app"
 }

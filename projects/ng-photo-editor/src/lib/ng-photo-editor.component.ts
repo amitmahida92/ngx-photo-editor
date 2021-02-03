@@ -6,8 +6,8 @@ import ViewMode = Cropper.ViewMode;
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'ngx-photo-editor',
-  templateUrl: './ngx-photo-editor.component.html',
-  styleUrls: ['./ngx-photo-editor.component.css'],
+  templateUrl: './ng-photo-editor.component.html',
+  styleUrls: ['./ng-photo-editor.component.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class NgxPhotoEditorComponent {
@@ -19,7 +19,7 @@ export class NgxPhotoEditorComponent {
   prevZoom = 0;
 
   @Input() modalTitle = 'Photo Editor';
-  @Input() aspectRatio = 1;
+  @Input() aspectRatio = NaN;
   @Input() autoCropArea = 1;
   @Input() autoCrop = true;
   @Input() mask = true;
@@ -85,7 +85,7 @@ export class NgxPhotoEditorComponent {
     }
   }
 
-  @Input() set imageChanedEvent(event: any) {
+  @Input() set imageChangedEvent(event: any) {
     if (event) {
       const file = event.target.files[0];
       if (file && (/\.(gif|jpe?g|tiff|png|webp|bmp)$/i).test(file.name)) {

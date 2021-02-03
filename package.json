@@ -1,5 +1,5 @@
 {
-  "name": "ngx-photo-editor-app",
+  "name": "ng-photo-editor-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,11 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy": "ng deploy --base-href=/ngx-photo-editor/",
+    "deploy": "ng deploy --base-href=/ng-photo-editor/",
     "e2e": "ng e2e",
-    "build:lib": "ng build ngx-photo-editor",
-    "test:lib": "ng test ngx-photo-editor",
-    "lint:lib": "ng lint ngx-photo-editor"
+    "build:lib": "ng build ng-photo-editor",
+    "test:lib": "ng test ng-photo-editor",
+    "lint:lib": "ng lint ng-photo-editor"
   },
   "private": true,
   "dependencies": {
@@ -30,7 +30,7 @@
     "bootstrap": "^4.5.0",
     "cropperjs": "^1.5.7",
     "hammerjs": "^2.0.8",
-    "ngx-photo-editor": "file:dist/ngx-photo-editor",
+    "ng-photo-editor": "file:dist/ng-photo-editor",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
